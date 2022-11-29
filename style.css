@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.login-conatiner{
+    width: 930px ;
+    background-color: white;
+    box-shadow: 0 0 50px 0 yellow;
+    min-height: 350px;
+    padding: 80px 70px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.leftconatiner{
+    width: 20%;
+}
+.rightcontainer{
+    width: 50%;
+}
+.leftconatiner > img{
+    height: 140px;
+    width: 130px;
+}
+
+.rightcontainer h1{
+    color: blue;
+    font-size: 32px;
+}
+.rightcontainer h2{
+    color: yellow;
+    margin: 20px auto 10px;
+    font-size: 25px;
+}
+.rightcontainer ul{
+    color: red;
+    font-size: 18px;
+    margin-top: 5px ;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.rightcontainer ul li{
+    margin-top: 20px;
+}
+.scroll{
+    overflow-y: scroll;
+    height: 150px; ;
+    padding: 50px 25px;
+}
+.extremeright{
+    position: relative;
+    width: 30%;
+   
+}
+.scroll{
+    overflow-y: scroll;
+    height: 195px;
+    width: 300px;
+}
+.category{
+    color: red;
+    width: 80px;
+    padding: 2px 20px;
+    
+}
+
+form input{
+    margin-top: 19px;
+    font-size: 16px;
+    color: blue;
+    padding: 2px 9px;
+    outline: red;
+    
+    
+}
+
+
+.frontsave{
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    font-size: 19px;
+    margin-top: 8px;
+    margin-left: 13px;
+    
+}
+.frontsave:hover{
+    background-color: white;
+    color: red;
+    box-shadow: 0px 0px 20px 0px green;
+    transition: 0.4s;
+}
+a{
+
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    font-size: 19px;
+    margin-top: 10px;
+    text-decoration: none;
+    width: 250px;
+}
+a:hover{
+    background-color: white;
+    color: red;
+    box-shadow: 0px 0px 20px 0px green;
+    transition: 0.4s;
+}
+#stylename{
+    width: 19vw;
+    height: 5vh;
+    border: none;
+    border-bottom: 1px solid red;
+    outline: none;
+    font-size: 18px;
+    color: red;
+}
+
+
+.save > a{
+    background-color: blue;
+    border-radius: 100px;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+/*question quiz styling*/
+
+.quesbox{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 0 blue;
+    min-height: 420px;
+    width: 950px;
+    padding: 12px;
+}
+
+.questitle{
+    border-bottom: 1px solid blue;
+    color: red;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.header{
+    margin-top: 25px ;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+.scorebox{
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid red;
+}
+.timerbox{
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: 1px solid red;
+}
+.timerbox > span,
+.scorebox > span{
+    color: red;
+    font-weight: 600;
+}
+
+.question{
+    background-color: rgb(206, 206, 246);
+    color: black;
+    border-radius: 10px ;
+    padding: 10px 15px;
+}
+.option_group{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    margin: 30px 0;
+    grid-gap: 15px;
+
+}
+
+.option{
+    background-color: rgb(254, 166, 166);
+    border-radius: 5px;
+    color:red;
+    border: 1px solid red;
+    padding: 10px 15px ;
+    list-style-type:none;
+    border: 2px solid transparent;
+}
+
+.option:hover{
+    cursor: pointer;
+    border: 2px solid red;
+    background-color: white;
+    color: blue;
+}
+
+
+.btn-next{
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    font-size: 19px;
+
+}
+
+.active{
+    background-color: white !important;
+    color: red !important;
+}
+
+.writeResult{
+    border-bottom: 1px solid blue;
+    color: red;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+}
+
+
+.resultsummary{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px ;
+    font-size: 20px;
+}
+
+.resultsummary *:nth-child(odd){
+    text-align: right;
+}
+
+.resultsummary span{
+    font-weight: 600;
+    color: blue;
+}
+
+.lastresult{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lastresult > button,
+.lastresult a{
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+.active{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 20px 0px yellow;
+}
+
+/*trying to make responsive as I can do*/
+
+@media screen and (max-width:768px){
+    .leftconatiner{
+        display: none;
+    }
+    .optionbox{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
